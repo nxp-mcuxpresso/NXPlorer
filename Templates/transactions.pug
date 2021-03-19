@@ -1,0 +1,24 @@
+//Copyright 2019 NXP
+//SPDX-License-Identifier: Apache-2.0
+
+doctype html
+html
+
+head
+    link(rel="stylesheet", href="styling.css")
+    script(src="dynamic.js", onLoad="initJavascript(" + portvalue + ", 'transactions', '" + blockchain + "', '"+ blockchainAPILocation +"')")
+body
+    ul(class="nav")
+        li 
+            a(href="/") Index
+        li
+            a(href="/transactions", class="active") Transactions
+        li
+            a(href="/blocks") Blocks
+        li
+            a(href="/batches") Batches
+        li(style="float:right;")
+            a(href="https://www.nxp.com")
+             img(src="nxplorer-white.svg" alt="nxp logo")
+    p
+    div(id="transactions")

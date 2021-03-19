@@ -1,0 +1,97 @@
+/* Copyright 2019 NXP
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+ /*
+ * CSS for html code
+ */
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.nav li {
+  float: left;
+}
+
+ul.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.nav li a:hover:not(.active) {
+  background-color: #FFA700;
+}
+
+.active {
+  background-color: #FFA700;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+}
+img{
+  height: 14px;
+}
+
+/*
+ * CSS for dynamic.js html code
+ */
+div.mainblock{
+  background-color:#FFA700;
+  border: 3px solid black;
+  border-radius:25px;
+  margin: 20px;
+  padding: 10px
+}
+
+div.mainblock h3{
+  padding: 3px;
+  text-align: center
+}
+
+div.subblock_blue{
+  background-color:#7BB1DB;
+  border-radius:25px;
+  border: 2px solid #7BB1DB;
+  margin: 5px 2px 5px 2px;
+  padding:5px
+}
+
+div.subblock_green{
+  background-color:#C9D200;
+  border-radius:25px;
+  border: 2px solid #C9D200;
+  margin: 5px 2px 5px 2px;
+  padding:5px
+}
+
+div.subblock_blue h3, 
+div.subblock_blue h4, 
+div.subblock_green h3, 
+div.subblock_green h4{
+  text-align: initial;
+  margin: 2px 5px;
+}
+div.subblock_blue table,  
+div.subblock_green table,
+div.subblock_blue ul,  
+div.subblock_green ul{
+  margin: 5px 5px;
+}

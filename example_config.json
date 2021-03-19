@@ -1,0 +1,15 @@
+{
+    "enableExplorer": true,
+    "explorerPort": 5000,
+    "interfaces": {
+        "serial1": {
+            "description":"FRDM-K64F using SE050",
+            "interfaceType": "serial",
+            "serialName": "COM9",
+            "baudrate": 115200
+        }
+    },
+    "preserveRawFiles" : true,
+    "blockchain" : "sawtooth",
+    "blockchainAPILocation" : "http://192.168.0.125:8008"
+}

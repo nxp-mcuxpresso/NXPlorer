@@ -1,0 +1,26 @@
+{
+  "name": "nxplorer",
+  "version": "2.0.0",
+  "description": "please refer to the README.md file",
+  "main": "NXPlorer",
+  "author": { 
+    "name" : "Arnold Braine", 
+    "email" : "arnold.braine@nxp.com"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type" : "git",
+    "url" : "https://nxf47943@bitbucket.sw.nxp.com/scm/~nxf47943/nxplorer.git"
+  },
+  "dependencies": {
+    "cbor": "^5.0.1",
+    "child_process": "^1.0.2",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "protobufjs": "^6.9.0",
+    "pug": "^2.0.4",
+    "sawtooth-sdk": "^1.0.5",
+    "serialport": "^7.1.5",
+    "yargs": "^13.3.0"
+  }
+}

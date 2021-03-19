@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+/* Copyright 2019 NXP
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+const arguments = require('./Parsers/yargsParse').parse()
+const argInt = require("./Parsers/argInterpreter");
+const parsedArgs = argInt.interpret(arguments)
+const serverHelper = require("./Helpers/serverHelper")
+
+var whatHappened = "Here is a short summary of what has happened:\r\n"
+
+whatHappened = serverHelper.explorerStartup(parsedArgs, whatHappened)
+
+if('interfaces' in parsedArgs && 'preserveRawFiles' in parsedArgs){
+    if(parsedArgs['preserveRawFiles']==true){
+        whatHappened += "\t- The argument preserveRawFiles was set to true and so the raw files of the sent data won't be deleted. Warning: this should be used in production.\r\n"
+    }else {
+        whatHappened += "\t- The argument preserveRawFiles was set to false and so the raw files of the sent data will be deleted.\r\n"
+    }
+    if(Object.keys(parsedArgs.interfaces).length != 0)
+    whatHappened = serverHelper.interfaceEnabler(parsedArgs, whatHappened)
+} else {
+    whatHappened += "\t- NXPlorer ran as none"
+}
+console.log(whatHappened)
