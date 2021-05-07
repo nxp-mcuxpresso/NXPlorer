@@ -10,7 +10,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type" : "git",
-    "url" : "https://nxf47943@bitbucket.sw.nxp.com/scm/~nxf47943/nxplorer.git"
+    "url" : "https://github.com/NXPmicro/NXPlorer"
   },
   "dependencies": {
     "cbor": "^5.0.1",
