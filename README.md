@@ -52,7 +52,7 @@ NXPlorer/
 
 *Note*: the following commands where ran, on ubuntu using the default bash and on windows using git bash
 
-* Clone this repository: `git clone https://nxf47943@bitbucket.sw.nxp.com/scm/~nxf47943/nxplorer.git`
+* Clone this repository: `git clone https://github.com/NXPmicro/NXPlorer.git`
 * Go inside the NXPlorer directory: `cd NXPlorer`
 * Once inside of the this folder, run `npm install`
 * The next steps depend on what you plan on doing:
